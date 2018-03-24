@@ -13,7 +13,7 @@ at: driver/uart.o \
     user/at_ipCmd.o \
     user/at_wifiCmd.o \
     user/at_port.o \
-    user/user_main.o
+    user/user_main.o \
     $(CC) $(LDFLAGS) $^ -o $@ $(LDLIBS)
 
 flash: at-0x00000.bin
